@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+html, body{
+	margin:0px;
+	background-color:#DDDDDD;
+	font-size: 14px;
+}
+
+ul, li{
+    display: block;
+}
+p {
+	line-height: 2.0;
+}
+/* header */
+header{
+	widows: 100%;
+	height: 66px;
+	background-color: #333333;
+}
+header .head_logo{
+	float: left;
+	margin-left: 20px;
+}
+header .head_nav{
+	float: right;
+	height: 66px;
+	line-height: 36px;
+	margin-right: 20px;
+}
+header .head_nav li{
+	float: right;
+	margin-right: 40px;
+}
+header .head_nav li a{
+	margin-right: 20px;
+	color: white;
+	font-size: 12px;
+}
+header .head_nav li a:nth-child(4){
+	color: #8d8d8d;
+}
+/* header end */
+
+.container{
+	width: 100%;
+	padding: 0;
+	margin: auto;
+}
+
+/* Main_Left */
+.main_l{
+   margin: 40px 450px 20px 20px;
+}
+.article {
+	background: white;
+	margin: 20px auto;
+	box-shadow: 5px 5px 5px grey;
+	padding: 40px 25px;
+	overflow: auto;
+}
+.article h5{
+	color: grey;
+}
+.article time{
+	margin-left: 10px;
+}
+.article li{
+	padding-top: 10px;
+}
+.article .pictures {
+	float: left;
+	display: inline-block;
+	border:1px solid lightgrey;
+	width: 100px;
+	text-align: center;
+	padding:5px 5px;
+	margin: 20px;
+}
+.article .pictures p{
+	margin: 5px;
+	font-size: 10px;
+}
+.article .pictures img{
+	width: 100px;
+	height: 70px;
+}
+.article table{
+	width:100%;
+	border:1px solid lightgrey;
+	border-collapse: collapse;
+}
+.article table th,td{
+	padding:5px;
+}
+.article table thead{
+	background: black;
+	color:white;
+	text-align: left;
+}
+.article table tbody tr:last-child{
+	background:lightgrey;
+	font-weight: bold;
+}
+/* Main_Left end */
+
+/* Main_Right */
+
+.main_r{
+	width: 430px;
+	position: absolute;
+	right: 1px;
+	font-size: 13px;
+	top: 85px;
+}
+
+.siderbar {
+	margin: 21px 20px 20px 0;
+	padding: 24px 32px;
+	background: #fff;
+	box-shadow: 3px 3px 2px #888888;
+}
+.siderbar h3{
+	height: 38px;
+	line-height: 38px;
+	padding-left: 12px;
+	border-left: 3px solid #ccc;
+}
+.siderbar .info {
+	width: 100%;
+}
+
+.siderbar span{
+	width: 100px;
+	padding-right: 10px;
+	text-align: right;
+	display: inline-block;
+}
+.siderbar p{
+	padding-left: 110px;
+	color: #a5a222;
+	font-size: 12px;
+	line-height: 1.0;
+}
+.siderbar .email,
+.siderbar .password,
+.siderbar .option {
+	margin: 15px;
+}
+.siderbar .email input,.siderbar .password input {
+	width: 128px;
+	padding: 3px;
+	margin-top: 5px;
+}
+.siderbar .password div{
+	margin: 12px 0;
+}
+
+.siderbar .option div {
+	margin: 12px 0;
+}
+
+.siderbar .detail span{
+	vertical-align: top;
+}
+
+.siderbar .btn{
+	display: inline;
+	width:100%;
+	background: #3355FA;
+	padding:10px 0;
+	color:white;
+	font-weight: bold;
+	font-size: 16px;
+	border-radius: 10px;
+	margin:10px 0;
+}
+.siderbar .btn:hover{
+	background:#204daa;
+	cursor: pointer;
+}
+/* Main_Right end */
+@media screen and (max-width: 800px){
+	.main_r,.main_l{
+		padding: 10px;
+		margin: auto;
+	}
+	.siderbar{
+		position: static;
+	}
+}
+
+
+
+
+
+
+
+
+
+
