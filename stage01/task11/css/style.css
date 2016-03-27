@@ -222,14 +222,14 @@
      display: -webkit-flex;
      display: -ms-flexbox;
      display: flex;
-     height: 4.5rem;
      margin: 1rem 1.3rem 0 1.3rem;
      padding-bottom: 1rem;
      border-bottom: 0.1rem solid #f2f2f2;
  }
  
  .g-aside .m-article img {
-     height: 100%;
+     width: 25%;
+     height: 25%;
  }
  
  .g-aside .m-article div {
