@@ -255,11 +255,16 @@
      display: -webkit-flex;
      display: -ms-flexbox;
      display: flex;
+     justify-content: space-between;
      margin: 1rem 0 0 0;
  }
  
- .g-aside .m-article-list ul img {
-     width: 80%;
+ .g-aside .m-article-list ul li:not(:first-child) {
+	margin-left: 1rem;
+ } 
+
+ .g-aside .m-article-list ul li img {
+	width: 100%;
  }
  
  .g-aside .m-article-list span {
