@@ -2,6 +2,7 @@
  
  .container {
      font-size: 1rem;
+     min-width: 320px;
  }
  
  /* 布局 */
@@ -90,6 +91,7 @@
  .m-nav .active {
      border-bottom: 0.2rem solid #91d4da;
  }
+
  
  /*              */
  /* 设置主区域样式 */
@@ -215,7 +217,7 @@
  /*        */
  
  .g-aside h3 {
-     font-size: 22px;
+     font-size: 1.2rem;
  }
  
  .g-aside .m-article {
