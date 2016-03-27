@@ -2,206 +2,170 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<meta name="apple-mobile-web-app-capable" content="yes"/>
-	<meta name="author" content="haidao17, yiwenqi1989@gmail.com"/>
-	<title>移动web布局实践</title>
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="haidao17, yiwenqi1989@gmail.com" />
+    <title>移动web布局实践</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
 <body>
-	<div class="container">
+    <div class="container">
 
-		<!-- 页面头部 -->
-		<header class="g-header">
+        <!-- 页面头部 -->
+        <header class="g-header">
+            <header class="m-title">
+                <a class="back-btn">
+                    <span>返回</span>
+                </a>
+                <h1>这是标题</h1>
+            </header>
+            <nav class="m-nav">
+                <ul>
+                    <li>导航</li>
+                    <li class="active">导航</li>
+                    <li>导航</li>
+                    <li>导航</li>
+                    <li>导航</li>
+                </ul>
+            </nav>
+        </header>
 
-			<header class="m-title">
-				<a class="back-btn">
-					<span>返回</span>
-				</a>
-				<h1>这是标题</h1>
-			</header>
+        <!-- 主区域 -->
+        <section class="g-main">
+            <!-- 焦点图 -->
+            <div class="m-banner">
+                <img src="./image/banner.png" />
+            </div>
+            <!-- 标签区 -->
+            <div class="m-tag">
+                <ul>
+                    <li>
+                        <img src="./image/tag.png">
+                        <span>标签</span>
+                    </li>
+                    <li>
+                        <img src="./image/tag.png">
+                        <span>标签</span>
+                    </li>
+                    <li>
+                        <img src="./image/tag.png">
+                        <sapn>标签</span>
+                    </li>
+                    <li>
+                        <img src="./image/tag.png">
+                        <span>标签</span>
+                    </li>
+                    <li>
+                        <img src="./image/tag.png">
+                        <span>标签</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- 栏目区 -->
+            <div class="m-category">
+                <ul>
+                    <li>
+                        <img src="./image/cg-1.png">
+                        <h2>分栏一</h2>
+                        <h3>分栏小标题一</h3>
+                    </li>
+                    <li>
+                        <img src="./image/cg-2.png">
+                        <h2>分栏二</h2>
+                        <h2>分栏小标题三</h2>
+                    </li>
+                    <li>
+                        <img src="./image/cg-3.png">
+                        <h2>分栏三</h2>
+                        <h3>分栏小标题三</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-			<nav class="m-nav">
-				<ul>
-					<li>导航</li>
-					<li class="active">导航</li>
-					<li>导航</li>
-					<li>导航</li>
-					<li>导航</li>
-				</ul>
-			</nav>
+        <!-- 模块一 -->
+        <section class="g-aside">
+            <h2>模块一</h2>
+            <div class="m-box">
+                <img src="./image/item-img.png">
+                <ul>
+                    <li>这是文案</li>
+                    <li>这是文案</li>
+                </ul>
+                <ul>
+                    <li>这是文案</li>
+                    <li>这是文案</li>
+                </ul>
+            </div>
+            <div class="m-box">
+                <img src="./image/item-img.png">
+                <ul>
+                    <li>这是文案</li>
+                    <li>这是文案</li>
+                </ul>
+                <ul>
+                    <li>这是文案</li>
+                    <li>这是文案</li>
+                </ul>
+            </div>
+        </section>
 
-		</header>
-
-
-		<!-- 主区域 -->
-		<section class="g-main">
-
-			<!-- 焦点图 -->
-			<div class="m-banner">
-				<img src="./image/banner.png"/>
-			</div>
-
-			<!-- 标签区 -->
-			<div class="m-tag">
-				<ul>
-					<li>
-						<img src="./image/tag.png">
-						<h3>标签</h3>
-					</li>
-					<li>
-						<img src="./image/tag.png">
-						<h3>标签</h3>
-					</li>
-					<li>
-						<img src="./image/tag.png">
-						<h3>标签</h3>
-					</li>
-					<li>
-						<img src="./image/tag.png">
-						<h3>标签</h3>
-					</li>
-					<li>
-						<img src="./image/tag.png">
-						<h3>标签</h3>
-					</li>
-				</ul>
-			</div>
-
-			<!-- 栏目区 -->
-			<div class="m-category">
-				<ul>
-					<li>
-						<img src="./image/cg-1.png">
-						<h2>分栏一</h2>
-						<h3>分栏小标题一</h3>
-					</li>
-					<li>
-						<img src="./image/cg-2.png">
-						<h2>分栏二</h2>
-						<h2>分栏小标题三</h2>
-					</li>
-					<li>
-							<img src="./image/cg-3.png">
-						<h2>分栏三</h2>
-						<h3>分栏小标题三</h3>
-					</li>
-
-				</ul>	
-			</div>
-		</section>
-
-
-		<!-- 模块一 -->
-		<section class="g-aside">
-
-			<h2>模块一</h2>
-
-			<div class="m-box">
-				<img src="./image/item-img.png">
-				<div class="item-list">
-					<ul>
-						<li>这是文案</li>
-						<li>这是文案</li>
-					</ul>
-				</div>
-				<div class="item-list">
-					<ul>
-						<li>这是文案</li>
-						<li>这是文案</li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="m-box">
-				<img src="./image/item-img.png">
-				<div class="item-list">
-					<ul>
-						<li>这是文案</li>
-						<li>这是文案</li>
-					</ul>
-				</div>
-				<div class="item-list">
-					<ul>
-						<li>这是文案</li>
-						<li>这是文案</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
-
-		<!-- 模块二 -->
-		<section class="g-aside">
-
-			<h2>模块二</h2>
-
-			<div class="m-box">
-				<img src="./image/item-img.png">
-				<div class="item-list">
-					<ul>
-						<li>这是文案</li>
-						<li>这是文案</li>
-					</ul>
-				</div>
-				<div class="item-list">
-					<ul>
-						<li>这是文案</li>
-						<li>这是文案</li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="m-box">
-				<img src="./image/item-img.png">
-				<div class="item-list">
-					<ul>
-						<li>这是文案</li>
-						<li>这是文案</li>
-					</ul>
-				</div>
-				<div class="item-list">
-					<ul>
-						<li>这是文案</li>
-						<li>这是文案</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
-		<!-- 文章区 -->
-		<section class="g-aside">
-			
-			<div class="m-article">
-				<img src="./image/article-img.png">
-				<div class="title-content">
-					<h3>这是文章字号为22号的文章标题</h3>
-					<span>文章来源：1分钟前</span>
-				</div>
-			</div>
-			
-			<div class="m-article">
-				<img src="./image/article-img.png">
-				<div class="title-content">
-					<h3>这是文章字号为22号的文章标题</h3>
-					<span>文章来源：2分钟前</span>
-				</div>
-			</div>
-			
-			<div class="m-article-list">
-				<h3>这是文章字号为22号的文章标题</h3>
-				<ul>
-					<li><img src="./image/article-img.png"/></li>
-					<li><img src="./image/article-img.png"/></li>
-					<li><img src="./image/article-img.png"/></li>
-				</ul>
-				<span>文章来源：3分钟前</span>
-			</div>
-
-		</section>
-
-	</div>
+        <!-- 模块二 -->
+        <section class="g-aside">
+            <h2>模块二</h2>
+            <div class="m-box">
+                <img src="./image/item-img.png">
+                <ul>
+                    <li>这是文案</li>
+                    <li>这是文案</li>
+                </ul>
+                <ul>
+                    <li>这是文案</li>
+                    <li>这是文案</li>
+                </ul>
+            </div>
+            <div class="m-box">
+                <img src="./image/item-img.png">
+                <ul>
+                    <li>这是文案</li>
+                    <li>这是文案</li>
+                </ul>
+                <ul>
+                    <li>这是文案</li>
+                    <li>这是文案</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- 文章区 -->
+        <section class="g-aside">
+            <div class="m-article">
+                <img src="./image/article-img.png">
+                <div class="title-content">
+                    <h3>这是文章字号为22号的文章标题</h3>
+                    <span>文章来源：1分钟前</span>
+                </div>
+            </div>
+            <div class="m-article">
+                <img src="./image/article-img.png">
+                <div class="title-content">
+                    <h3>这是文章字号为22号的文章标题</h3>
+                    <span>文章来源：2分钟前</span>
+                </div>
+            </div>
+            <div class="m-article-list">
+                <h3>这是文章字号为22号的文章标题</h3>
+                <ul>
+                    <li><img src="./image/article-img.png" /></li>
+                    <li><img src="./image/article-img.png" /></li>
+                    <li><img src="./image/article-img.png" /></li>
+                </ul>
+                <span>文章来源：3分钟前</span>
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>
