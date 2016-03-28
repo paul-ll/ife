@@ -544,7 +544,7 @@
 	height: 121px;
 	width:644px;
 	font-size: 12px;
-	background: #EDEDEF;
+	background-color: #EDEDEF;
 	border: none;
 	outline: none;
 	margin:10px;
@@ -556,6 +556,10 @@
 	font-size: 14px;
 	font-weight: bold;
 	cursor: pointer;
+}
+
+.content .volunteer .right .button:hover{
+	background-color: #DDD;
 }
 
 .footer{
