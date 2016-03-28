@@ -13,6 +13,7 @@
 }
 .header .logo{
 	float: left;
+	margin-left: 55px;
 	height: 56px;
 	line-height: 56px;
 }
@@ -26,6 +27,7 @@
 .header ul.nav{
 	height: 56px;
 	float: right;
+	margin-right: 50px;
 }
 .header ul.nav li{
 	float: left;
@@ -304,17 +306,11 @@
 	text-align: center;
 	width: 1280px;
 	height: 566px;
+	overflow: hidden;
 }
 
 .content .activity .world li{
-	display: none;
-	/*position: absolute;
-	left: 0;
-	top: 0;*/
-}
-
-.content .activity .world .show{
-	display: block;
+	float: left;
 }
 
 .content .activity .world div{
