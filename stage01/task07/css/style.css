@@ -514,6 +514,7 @@
 	line-height: 20px;
 }
 .content .volunteer .left .link{
+	cursor: pointer;
 	text-align: right;
 }
 .content .volunteer .left .link:hover{
