@@ -5,10 +5,6 @@ html, body{
 	background-color:#DDDDDD;
 	font-size: 14px;
 }
-
-ul, li{
-    display: block;
-}
 p {
 	line-height: 2.0;
 }
@@ -31,11 +27,17 @@ header .head_nav{
 header .head_nav li{
 	float: right;
 	margin-right: 40px;
+	display: inline;
 }
 header .head_nav li a{
+	text-decoration: none;
 	margin-right: 20px;
 	color: white;
 	font-size: 12px;
+}
+header .head_nav li a span{
+	color: black;
+	padding-right: 3px;
 }
 header .head_nav li a:nth-child(4){
 	color: #8d8d8d;
