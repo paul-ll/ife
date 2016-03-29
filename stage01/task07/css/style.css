@@ -11,7 +11,16 @@
 	width: 1280px;
 	height: 56px;
 }
+
+.header div{
+	background-color: #fff;
+    width: 1280px;
+    position: fixed;
+    z-index: 100;
+}
+
 .header .logo{
+	width: 120px;
 	float: left;
 	margin-left: 55px;
 	height: 56px;
@@ -48,7 +57,7 @@
 .header ul.nav li a.active::after{
 	content: "";
 	width: 48px;
-	height: 5px;
+	height: 3px;
 	background-color: #E74F4D;
 	display: block;
 }
@@ -61,7 +70,7 @@
 	content: "";
 	margin:0 auto;
 	width: 0;
-	height: 5px;
+	height: 3px;
 	background-color: #E74F4D;
 	display: block;
 	transition:all 0.3s;
@@ -559,7 +568,7 @@
 }
 
 .content .volunteer .right .button:hover{
-	background-color: #DDD;
+	background-color: #ddd;
 }
 
 .footer{
@@ -664,6 +673,7 @@ a{
 	height: 31px;
 	background: url(../images/logo.png) no-repeat;
 	background-size:100% 100%;
+	vertical-align: middle;
 }
 
 .icon-login{
