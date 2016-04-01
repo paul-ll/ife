@@ -1,0 +1,182 @@
+
+html, body{
+	height: 100%;
+}
+
+.container{
+	position: relative;
+	height: 100%;
+	min-width: 1210px;
+}
+
+.g-header, .m-logo, .m-search, .m-login,
+.g-body,
+.g-sidebar, .m-userInfo, .m-infoList,
+.g-main, .m-nav, .m-contentBox,.m-searchList, .m-timeList, .m-stat,
+.m-pjTable, .m-pjTable, .m-pjInfo,.m-date, .m-rank{
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+
+.g-header,.g-body{
+	position: absolute;
+}
+
+.g-header{
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+	background-color: #2889BD;
+}
+
+.g-body{
+	top: 60px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.g-sidebar{
+	position: absolute;
+	top:0;
+	left: 0;
+	bottom: 0;
+	width: 260px;
+	background-color: #2b2e3c;
+	height: 100%;
+}
+
+.g-main{
+	position: absolute;
+	top: 0;
+	left: 260px;
+	right: 0;
+	bottom: 0;
+	background-color: #ededed;
+}
+
+
+/* g-header */
+
+.m-logo{
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin: 10px 0 10px 30px;
+}
+.m-search{
+	float: right;
+	width: 300px;
+	height: 30px;
+	margin: 15px 10px;
+}
+
+.m-login{
+	float: right;
+	width: 40px;
+	height: 40px;
+	margin: 10px;
+}
+
+/* g-aside */
+
+.m-userInfo{
+	height: 155px;
+	padding-left: 10px;
+}
+.m-infoList{
+	padding-left: 10px;
+}
+
+/* g-main */
+
+
+.m-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 30px;
+	margin-bottom: 15px;
+	background-color: white;
+}
+
+.m-contentBox{
+	position: absolute;
+	top: 45px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+	padding:0 30px;
+}
+.m-contentBox div {
+	width: 890px;
+	margin:0 auto;
+}
+
+.m-contentBox div > *{
+	margin-bottom: 10px;
+	background-color: white;
+}
+
+.m-searchList{
+	height: 90px;
+}
+
+.m-timeList{
+	height: 65px;
+}
+
+.m-stat{
+	height: 100px;
+}
+
+.m-pjTable{
+	float: left;
+	height: 360px;
+	width: 540px;
+}
+.m-pjInfo{
+	float: right;
+	height: 360px;
+	width: 340px;
+}
+
+.m-date	{
+	float: left;
+	display: flex;
+	height: 360px;
+	width: 360px;
+}
+
+.m-rank{
+	display: flex;
+	float: right;
+	width: 520px;
+	height: 360px;
+}
+
+.clearfix::after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
