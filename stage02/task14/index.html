@@ -41,7 +41,7 @@ aqiData.sort(sortValue);
   var liStr = "";
   for(var i=0; i<aqiData.length; i++){
     if(aqiData[i][1] > 60){
-      liStr += "<li>第" + ChinaNum[i] + aqiData[i] + "</li>";
+      liStr += "<li>第" + ChinaNum[i] + "名：" + aqiData[i] + "</li>";
     }
   }
   ulList.innerHTML = liStr;
