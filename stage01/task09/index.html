@@ -4,35 +4,347 @@
 	<meta charset="UTF-8">
 	<title>Task 9: 使用HTML/CSS实现一个复杂页面</title>
 	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
 	<div class="container">
+
 		<div class="g-header">
-			<section class="m-logo"></section>
-			<section class="m-login"></section>
-			<section class="m-search"></section>
+
+			<section class="m-logo">
+				<div></div>
+			</section>
+
+			<section class="m-login">
+				<div></div>
+				<span>登陆</span>
+			</section>
+
+			<section class="m-search">
+				<b></b>
+				<input></input>
+			</section>
+
 		</div>
+
 		<div class="g-body">
+			
+
 			<div class="g-sidebar">
-				<section class="m-userInfo"></section>
-				<section class="m-infoList"></section>
+
+				<section class="m-userInfo">
+					<header>
+						<div class="pic"></div>
+						<div class="name">ABC123</div>
+					</header>
+					<div>
+						<span>110</span>
+						<span>收藏</span>
+					</div>
+					<div>
+						<span>110</span>
+						<span>收藏</span>	
+					</div>
+				</section>
+
+				<section class="m-infoList">
+					<ul>
+						<li class="active">
+							<h3>
+							<span class="fa fa-bar-chart"></span>
+							个人报表
+							</h3>
+							<ul>
+								<li>
+									<h3>
+										<span class="fa fa-angle-right"></span>
+										<span class="fa fa-folder"></span>
+										文件一
+									</h3>
+								</li>
+								<li class="active">
+									<h3>
+										<span class="fa fa-angle-down"></span>
+										<span class="fa fa-folder"></span>
+										文件二
+									</h3>
+									<ul>
+										<li class="active">
+											<h3><span class="fa fa-file-text"></span>文档1</h3>
+										</li>
+										<li>
+											<h3><span class="fa fa-file-text"></span>文档2<h3>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h3>
+										<span class="fa fa-angle-right"></span>
+										<span class="fa fa-folder"></span>
+									文件三</h3>
+								</li>
+							</ul>
+						</li>
+						<li><h3><span class="fa fa-star"></span>个人收藏</h3></li>
+						<li><h3><span class="fa fa-share"></span>我的分享</h3></li>
+						<li><h3><span class="fa fa-photo"></span>图库</h3></li>
+						<li><h3><span class="fa fa-pencil"></span>成长记录</h3></li>
+						<li><h3><span class="fa fa-user"></span>账户信息</h3></li>
+					</ul>
+				</section>
 			</div>
+			
+
 			<div class="g-main">
-				<section class="m-nav"></section>
+
+				<section class="m-nav">
+					<ul>
+						<li>C站</li>
+						<li>个人报表</li>
+						<li>文件一</li>
+						<li>文档一</li>
+					</ul>
+				</section>
+
 				<div class="m-contentBox clearfix">
 					<div>
-						<section class="m-searchList"></section>
-						<section class="m-timeList"></section>
-						<section class="m-stat"></section>
-						<section class="m-pjTable"></section>
-						<section class="m-pjInfo"></section>
+						<form class="m-searchList">
+							<section class="col1">
+								<div>
+									<label for="query">查询项</label>
+									<select name="project" id="query">
+										<option value="第一项">第一项</option>
+										<option value="第二项">第二项</option>
+										<option value="第三项">第三项</option>
+									</select>
+									<span class="arrow"></span>
+								</div>							
+							</section>
+							<section class="col2">
+								<div class="exchange">
+									<span class="arrow-bold top"></span>
+									<span class="arrow-bold bottom"></span>
+									<span>换</span>
+								</div>
+								<div>
+									<label for="query">买方</label>
+									<select name="project" id="query">
+										<option value="第一项">小A</option>
+										<option value="第二项">第二项</option>
+										<option value="第三项">第三项</option>
+									</select>
+									<span class="arrow"></span>
+								</div>
+								<div>
+									<label for="query">卖方</label>
+									<select name="project" id="query">
+										<option value="第一项">小C</option>
+										<option value="第二项">第二项</option>
+										<option value="第三项">第三项</option>
+									</select>
+									<span class="arrow"></span>
+								</div>
+							</section>
+							<section class="col3">
+								<div>
+									<label for="date">日期</label>
+									<input name="project" id="date" type="date" value="2016-04-01" />
+								</div>
+								<div>
+									<label for="cost-time">总耗时</label>
+									<select name="project" id="cost-time">
+										<option value="第一项">8 天</option>
+										<option value="第二项">9 天</option>
+										<option value="第三项">10 天</option>
+									</select>
+									<span class="arrow"></span>
+								</div>	
+								<div>
+									<label for="num">人数</label>
+									<select name="project" id="num">
+										<option value="第一项">10 人</option>
+										<option value="第二项">11 人</option>
+										<option value="第三项">12 人</option>
+									</select>
+									<span class="arrow"></span>
+								</div>
+								<div>
+									<label for="deal">成交项</label>
+									<select name="project" id="deal">
+										<option value="第一项">10 项</option>
+										<option value="第二项">11 项</option>
+										<option value="第三项">12 项</option>
+									</select>
+									<span class="arrow"></span>
+								</div>
+							</section>
+							<section class="col4">
+								<button>搜索</button>
+							</section>
+						</form>
+
+						<section class="m-timeList">
+							<ul>
+								<li>
+									<span class="arrow"></span>
+								</li>
+								<li class="active">
+									<span class="time">10:00 am</span>
+									<span class="money">1200</span>
+								</li>
+								<li>
+									<span class="time">11:00 am</span>
+									<span class="money">1300</span>
+								</li>
+								<li>
+									<span class="time">12:00 am</span>
+									<span class="money">1400</span>
+								</li>
+								<li>
+									<span class="time">01:00 pm</span>
+									<span class="money">1200</span>
+								</li>
+								<li>
+									<span class="time">02:00 pm</span>
+									<span class="money">1600</span>
+								</li>
+								<li>
+									<span class="time">03:00 pm</span>
+									<span class="money">1800</span>
+								</li>
+								<li>
+									<span class="arrow"></span>
+								</li>
+							</ul>
+							<div>
+								<span class="fa fa-calendar fa-2x"></span>
+								<span>历史查询</span>
+							</div>
+						</section>
+
+						<section class="m-stat">
+							<h3>2016年4月份统计</h3>
+							<div>
+								<div class="box">
+									<div>
+										<p>133311</p>
+										<p>成交量</p>
+									</div>
+									<div class="pic"></div>
+								</div>
+								<div class="box">
+									<div>
+										<p>133311</p>
+										<p>成交量</p>
+									</div>
+									<div class="pic"></div>
+								</div>
+								<div class="box">
+									<div>
+										<p>133311</p>
+										<p>成交量</p>
+									</div>
+									<div class="pic"></div>
+								</div>
+								<div class="box">
+									<div>
+										<p>133311</p>
+										<p>成交量</p>
+									</div>
+									<div class="pic"></div>
+								</div>
+							</div>
+						</section>
+
+						<section class="m-pjTable">
+							<h3>第一组项目</h3>
+							<section>
+								<ul class="clearfix">
+									<li class="active">项目一</li>
+									<li>项目二</li>
+									<li>项目三</li>
+									<li>项目四</li>
+									<li>项目五</li>
+								</ul>
+								<div>
+									<table>
+										<tr>
+											<td class="active">购买材料一</td>
+											<td>购买材料二</td>
+											<td>购买材料三</td>
+											<td>购买材料四</td>
+										</tr>
+										<tr>
+											<td>购买材料五</td>
+											<td>购买材料六</td>
+											<td>购买材料七</td>
+											<td>购买材料八</td>
+										</tr>
+										<tr>
+											<td>购买材料九</td>
+											<td>购买材料十</td>
+											<td>购买材料十一</td>
+											<td>购买材料十二</td>
+										</tr>
+										<tr>
+											<td>购买材料十三</td>
+											<td>购买材料十四</td>
+											<td>购买材料十五</td>
+											<td>购买材料十六</td>
+										</tr>
+										<tr>
+											<td>购买材料十七</td>
+											<td>购买材料十八</td>
+											<td>购买材料十九</td>
+											<td>购买材料二十</td>
+										</tr>
+										<tr>
+											<td>购买材料二十一</td>
+											<td>购买材料二十二</td>
+											<td>购买材料二十三</td>
+											<td>购买材料二十四</td>
+										</tr>
+									</table>
+								</div>
+							</section>
+						</section>
+						<form class="m-pjInfo">
+							<h3>第一组项目</h3>
+							<section>
+								<label for="title">标题</label>
+								<input type="text" id="title" value="项目报表三">
+							</section>
+							<section class="clearfix">
+								<div>
+									<label for="price">价格</label>
+									<input type="text" id="price" value="￥158">
+								</div>
+								<div>
+									<label for="charger">负责人</label>
+									<input type="text" id="charger" value="小A">
+								</div>
+							</section>
+							<section>
+								<label for="detail">详细描述</label>
+								<textarea id="detail" cols="42" rows="8">目前负责人是......</textarea>
+							</section>
+							<div>
+								<input type="checkbox" id="agreement" checked>
+								<label for="agreement">遵守保密协议</label>
+								<button>搜索</button>
+							</div>
+						</form>
 						<section class="m-date"></section>
 						<section class="m-rank"></section>
 					</div>
 				</div>
+
+
 			</div>
-		</div>
+		</div> 
+
+
 	</div>
 </body>
 </html>
