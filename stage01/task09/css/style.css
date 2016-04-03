@@ -951,6 +951,9 @@ html, body{
 	float: right;
 	width: 520px;
 	height: 360px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	overflow: hidden;
 }
 
 .m-rank h3{
