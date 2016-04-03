@@ -6,7 +6,7 @@
  *    "上海": 40
  * };
  */
-var aqiData = {}
+var aqiData = {},
 	hasValue = false;
 
 //判断空字符
