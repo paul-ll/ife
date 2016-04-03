@@ -31,7 +31,7 @@ html, body{
 	left: 0;
 	right: 0;
 	bottom: 0;
-	min-height: 800px;
+	min-height: 600px;
 }
 
 .g-sidebar{
@@ -251,7 +251,7 @@ html, body{
 
 .m-infoList > ul > li li {
 	width: 100px;
-	margin:10px 20px;
+	margin:20px 20px;
 }
 
 .m-infoList > ul > li ul {
@@ -829,24 +829,221 @@ html, body{
 	background-color: #3D8ABE;
 	float: right;
 	color: white;
-	font-size: 15px;
-	/* box-shadow: none; */
+	font-size: 13px;
+	box-shadow: 1px 1px 1px 1px #aaa;
 	border: none;
 	-webkit-appearance: none;
+	margin-top: 3px;
 }
 
-.m-date	{
+
+/* date */
+.m-calender	{
 	float: left;
-	display: flex;
 	height: 360px;
 	width: 360px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	overflow: hidden;
 }
 
-.m-rank{
+.m-calender h3{
+	font-size: 15px;
+	height: 40px;
+	background-color: #F4F5F7;
+	line-height: 40px;
+	padding-left: 20px;
+	color: #777;
+	border-bottom: 1px solid #ccc;
+}
+
+.m-calender ul {
+	margin:10px 20px;
 	display: flex;
+	justify-content: space-between;
+}
+
+.m-calender ul li{
+	position: relative;
+	flex:1;
+}
+
+
+.m-calender ul li:not(:last-child){
+	margin-right: 5px;
+}
+
+.m-calender ul li:not(:last-child)::after{
+	position: absolute;
+	top: 0;
+	left: 75%;
+	content: ""; 
+	height: 25px;
+	width: 2px;
+	border-right: 1px solid #ddd;
+}
+
+.m-calender ul li select{
+	background-color: white;
+    border-radius: 0;
+    height: 25px;
+    -webkit-appearance: none;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.m-calender ul li button{
+	width: 107%;
+	height: 25px;
+	background-color: white;
+	border: 1px solid #ccc;
+	-webkit-appearance: none;
+	box-sizing: border-box;
+}
+
+.m-calender ul li .arrow-bold {
+	position: absolute;
+	transform: rotate(-90deg);
+	bottom:7px;
+	left:83%;
+}
+
+.m-calender ul li .arrow-bold::before{
+	border-right-color: #aaa;
+}
+
+.m-calender table{
+	margin: 10px 20px;
+	width: 320px;
+	border-top: 1px solid #81CAEE;
+	border-collapse: separate;
+	border-spacing: 2px;
+
+}
+
+.m-calender table thead div{
+	border-bottom: 1px solid black;;
+}
+.m-calender table thead tr{
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-bottom: 1px solid black;
+	font-size: 15px;
+}
+
+
+.m-calender table tbody tr td{
+	height: 40px;
+	width: 40px;
+	text-align: center;
+}
+
+
+.m-calender table tbody tr td.active{
+	border: 1px solid #EE9A52;
+}
+
+/* rank */
+.m-rank{
 	float: right;
 	width: 520px;
 	height: 360px;
+}
+
+.m-rank h3{
+	font-size: 15px;
+	height: 40px;
+	background-color: #F4F5F7;
+	line-height: 40px;
+	padding-left: 20px;
+	color: #777;
+	border-bottom: 1px solid #ccc;
+}
+
+.m-rank table{
+	margin: 20px 30px;
+	width: 460px;
+}
+
+.m-rank table tr{
+	height: 25px;
+}
+
+.m-rank table tr td{
+	border: 1px solid #ccc;
+}
+
+.m-rank table tr td:not(:last-child){
+	text-align: center;
+}
+
+.m-rank table tr td:last-child{
+	padding-left: 20px;
+	position: relative;
+}
+
+.m-rank table tr td span{
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 60%;
+	height: 8px;
+	background-color: #ccc;
+}
+
+.m-rank table tr td span::after{
+	position: absolute;
+	content: "";
+	display: inline-block;
+	height: 8px;
+	background-color:#81CAEE;
+}
+
+.m-rank table tr:nth-child(2) td span::after{
+	width: 90%;
+	background-color: #EB6E55;
+}
+
+.m-rank table tr:nth-child(3) td span::after{
+	width: 80%;
+	background-color:#EC8055;
+}
+
+.m-rank table tr:nth-child(4) td span::after{
+	width: 70%;
+	background-color:#F0A15E;
+}
+
+.m-rank table tr:nth-child(5) td span::after{
+	width: 65%;
+}
+
+.m-rank table tr:nth-child(6) td span::after{
+	width: 60%;
+}
+
+.m-rank table tr:nth-child(7) td span::after{
+	width: 50%;
+}
+
+.m-rank table tr:nth-child(8) td span::after{
+	width: 45%;
+}
+
+.m-rank table tr:nth-child(9) td span::after{
+	width: 40%;
+}
+
+.m-rank table tr:nth-child(10) td span::after{
+	width: 35%;
+}
+
+.m-rank table tr:nth-child(11) td span::after{
+	width: 32%;
 }
 
 .clearfix::after {
@@ -858,8 +1055,6 @@ html, body{
     visibility: hidden;
 }
 
-
-
 .arrow::before,
 .arrow::after{
 	transform: translateY(-25%);
@@ -870,8 +1065,6 @@ html, body{
     border: 6px solid transparent;
     border-top: 6px solid black;
 }
-
-
 
 .arrow::after{
 	transform: translateY(-35%);
