@@ -62,10 +62,10 @@ function addAqiData() {
 function renderAqiList() {
 	if(hasValue === true){
 		var table = document.getElementById("aqi-table");
-		var list = "<tr><th>城市</th><th>空气质量</th><th>操作</th></tr>"
+		var list = "<tr><th>城市</th><th>空气质量</th><th>操作</th></tr>";
 		for(var city in aqiData){
 			hasValue = true;
-			list += "<tr><td>" + city + "</td><td>" + aqiData[city] + "</td><td><button>删除</button></td></tr>"
+			list += "<tr><td>" + city + "</td><td>" + aqiData[city] + "</td><td><button>删除</button></td></tr>";
 		}
 		table.innerHTML = list;
 	}
