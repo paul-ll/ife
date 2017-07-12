@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务十八</title>
+</head>
+<style>
+	body{
+		padding:20px;
+	}
+	ul li {
+		float: left;
+		list-style: none;
+		display: block;
+		min-width: 40px;
+		height: 40px;
+		background-color: red;
+		margin-right: 5px;
+		text-align: center;
+		line-height: 40px;
+		transition: 1s;
+		padding: 0 5px;
+		cursor: pointer;
+	}
+</style>
+<body>
+	<div>
+		<input type="text" id="input">
+		<button id="left-in">左侧入</button>
+		<button id="left-out">左侧出</button>
+		<button id="right-in">右侧入</button>
+		<button id="right-out">右侧出</button>
+	</div>
+	<ul id="list"><li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li></ul>
+	<script src="./queueWraper.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>

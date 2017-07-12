@@ -1,0 +1,436 @@
+@charset "UTF-8";
+
+.header,
+.content,
+.footer {
+	width: 892px;
+	margin: 0 auto;
+}
+
+.content .row2 p,
+.content .row2 .how ul {
+	font-size: 12px;
+	margin: 16px 0 0;
+	opacity: 0.7;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #9e958d;
+}
+
+.container {
+	width: 980px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+.header {
+	border-bottom: #938e8c 2px solid;
+	margin-bottom: 35px;
+	color: #d45d5c;
+	font-family: SimHei;
+	font-size: 12px;
+	text-align: right;
+}
+
+.header .tag {
+	position: relative;
+	margin-bottom: -1.2em;
+	width: 110px;
+	height: 61px;
+	background: #d45d5c;
+	color: #fff;
+}
+
+.header .tag span {
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+}
+
+.content .banner {
+	float: left;
+	position: relative;
+}
+
+.content .banner [class^=mask] {
+	position: absolute;
+	top: 0;
+	width: 191px;
+	height: 301px;
+	opacity: 0.5;
+}
+
+.content .banner .mask-left {
+	left: 0;
+	background: #d45d5c;
+}
+
+.content .banner .mask-right {
+	right: 0;
+	background: #75b86b;
+}
+
+.content .aside {
+	float: right;
+	position: relative;
+	box-sizing: border-box;
+	width: 203px;
+	height: 301px;
+	border-top: 2px solid #cc8091;
+	font-family: Microsoft YaHei;
+}
+
+.content .aside h3 {
+	font-size: 24px;
+	font-variant: small-caps;
+	text-decoration: underline;
+	line-height: 30px;
+	margin: 4px 0;
+}
+
+.content .aside p {
+	font-family: KaiTi;
+	color: #676767;
+	font-size: 12px;
+}
+
+.content .aside .outstand-num {
+	color: #75b86b;
+	font-size: 116px;
+	font-style: oblique;
+	margin-left: -20px;
+}
+
+.content .aside .aside-foot {
+	color: #cc8091;
+	height: 60px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.content .aside .aside-foot .left-num {
+	font-size: 55px;
+	float: left;
+	margin-right: 10px;
+}
+
+.content .aside .aside-foot .gpa {
+	font-size: 21px;
+	margin-bottom: -6px;
+	margin-top: 25px;
+}
+
+.content .aside .aside-foot .explain {
+	font-size: 12px;
+	color: #d3d3d3;
+	bottom: 0;
+	left: 100px;
+}
+
+.content .row2 {
+	margin-top: 40px;
+	font-family: Microsoft YaHei;
+}
+
+.content .row2 > div {
+	margin-right: 30px;
+}
+
+.content .row2 h4 {
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.content .row2 p {
+	font-family: SimSun;
+}
+
+.content .row2 .what {
+	width: 230px;
+	float: left;
+}
+
+.content .row2 .what h4 {
+	color: #418c59;
+}
+
+.content .row2 .when {
+	width: 205px;
+	float: left;
+}
+
+.content .row2 .when h4 {
+	color: #d2994f;
+}
+
+.content .row2 .how {
+	width: 130px;
+	float: left;
+	position: relative;
+}
+
+.content .row2 .how h4 {
+	color: #cc7680;
+}
+
+.content .row2 .how ul {
+	list-style: none;
+	margin-top: 30px;
+}
+
+.content .row2 .how ul .data {
+	color: #cd4a48;
+	font-style: italic;
+}
+
+.content .row3 .col1 h1 {
+	color: #11456b;
+	font-family: SimHei;
+	font-weight: bold;
+	font-size: 42px;
+}
+
+.content .row3 .col2 .fancy-block .fancy-foot .quote-text:before,
+.content .row3 .col2 .fancy-block .fancy-foot .quote-text:after {
+	color: #d45d5c;
+	font-family: SimHei;
+	font-size: 72px;
+}
+
+.content .row3 {
+	margin-top: 75px;
+	margin-bottom: 40px;
+}
+
+.content .row3 .col1 {
+	width: 415px;
+	float: left;
+}
+
+.content .row3 .col1 h1 {
+	line-height: 42px;
+}
+
+.content .row3 .col1 h1 .first-word {
+	color: #f5e327;
+	font-size: 72px;
+	font-style: italic;
+}
+
+.content .row3 .col1 .cn {
+	font-size: 33px;
+	border-bottom: 2px #11456b solid;
+	padding: 10px 0 16px;
+}
+
+.content .row3 .col1 p {
+	line-height: 16px;
+	font-size: 12px;
+	font-family: SimSun;
+}
+
+.content .row3 .col1 p:first-of-type {
+	margin-top: 25px;
+}
+
+.content .row3 .col1 p:first-of-type:first-letter {
+	float: left;
+	line-height: 1em;
+	margin-right: 10px;
+	color: #f5e327;
+	font-size: 70px;
+}
+
+.content .row3 .col1 p + p {
+	text-indent: 2em;
+}
+
+.content .row3 .col1 img {
+	float: right;
+	margin: 20px;
+}
+
+.content .row3 .col2 {
+	width: 458px;
+	float: right;
+}
+
+.content .row3 .col2 .img-with-mask {
+	position: relative;
+	height: 275px;
+	margin-bottom: 30px;
+}
+
+.content .row3 .col2 .img-with-mask .mask {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 61px;
+	background: rgba(0, 0, 0, 0.5);
+	font-family: Microsoft YaHei;
+}
+
+.content .row3 .col2 .img-with-mask .mask .text1 {
+	position: absolute;
+	top: 50%;
+	margin-top: -22px;
+	height: 44px;
+	line-height: 44px;
+	border-left: 3px solid #72b16a;
+	margin-left: 30px;
+	padding-left: 12px;
+	color: #fff;
+	font-size: 26px;
+}
+
+.content .row3 .col2 .img-with-mask .mask .text2 {
+	position: absolute;
+	left: 160px;
+	bottom: 15px;
+	color: #72b16a;
+	font-style: italic;
+	font-size: 12px;
+}
+
+.content .row3 .col2 .fancy-block {
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	height: 318px;
+	background: #eeedd6;
+	padding: 20px;
+}
+
+.content .row3 .col2 .fancy-block li {
+	display: flex;
+	align-items: baseline;
+	font-family: SimSun;
+}
+
+.content .row3 .col2 .fancy-block li .left {
+	text-align: left;
+	font-size: 16px;
+}
+
+.content .row3 .col2 .fancy-block li .left i {
+	display: inline-block;
+	margin: 0 10px;
+	padding: 0;
+	width: 0;
+	height: 0;
+	border-left: 5px transparent solid;
+	border-right: 5px transparent solid;
+	border-bottom: 10px #10446b solid;
+}
+
+.content .row3 .col2 .fancy-block li .right {
+	text-align: right;
+	font-style: oblique;
+	font-size: 12px;
+}
+
+.content .row3 .col2 .fancy-block li .dot {
+	flex: 1;
+	margin: 0 5px;
+	border-bottom: 2px dotted #5a5b5b;
+}
+
+.content .row3 .col2 .fancy-block li + li {
+	margin: 20px 0;
+}
+
+.content .row3 .col2 .fancy-block .fancy-foot {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.content .row3 .col2 .fancy-block .fancy-foot .corner-box {
+	box-sizing: border-box;
+	width: 260px;
+	height: 160px;
+	background: #d45d5c;
+	font-family: Microsoft YaHei;
+	color: #fff;
+	padding: 37px 15px;
+}
+
+.content .row3 .col2 .fancy-block .fancy-foot .corner-box .big-num {
+	float: left;
+	font-size: 110px;
+	padding-right: 5px;
+	margin-right: 8px;
+	border-right: 2px solid #fff;
+	height: 86px;
+	line-height: 86px;
+}
+
+.content .row3 .col2 .fancy-block .fancy-foot .corner-box .text {
+	font-family: SimHei;
+}
+
+.content .row3 .col2 .fancy-block .fancy-foot .corner-box .text h4 {
+	font-style: oblique;
+	font-size: 21px;
+}
+
+.content .row3 .col2 .fancy-block .fancy-foot .corner-box .text p {
+	font-size: 12px;
+}
+
+.content .row3 .col2 .fancy-block .fancy-foot .quote-text {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	width: 165px;
+	line-height: 16px;
+	font-size: 14px;
+	color: #5a5b5b;
+	font-family: SimHei;
+	font-style: oblique;
+}
+
+.content .row3 .col2 .fancy-block .fancy-foot .quote-text:before {
+	content: "“";
+	float: left;
+	height: 1px;
+	margin: 15px 15px 0 -50px;
+}
+
+.content .row3 .col2 .fancy-block .fancy-foot .quote-text:after {
+	content: "”";
+	float: right;
+	height: 1px;
+	width: 50px;
+	margin-top: 30px;
+}
+
+.footer {
+	height: 60px;
+	border-top: 1px solid #938e8c;
+}
+
+.footer .text {
+	color: #d45d5c;
+	font-size: 12px;
+	font-family: SimHei;
+	text-align: right;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
